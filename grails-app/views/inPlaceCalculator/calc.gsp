@@ -4,17 +4,17 @@
     <title>
         In-Place Calculator
     </title>
-%{--    todo: 3 add on-page validation--}%
-%{--    <script>--}%
-%{--        function validate(field) {--}%
-%{--            if( Number(field.value) < 1.0) {--}%
-%{--                field.classList.add("error");--}%
-%{--                field.focus();--}%
-%{--            } else {--}%
-%{--                field.classList.remove("error");--}%
-%{--            }--}%
-%{--        }--}%
-%{--    </script>--}%
+%{--    3 add on-page validation--}%
+    <script>
+        function validate(field) {
+            if( Number(field.value) < 1.0) {
+                field.classList.add("error");
+                field.focus();
+            } else {
+                field.classList.remove("error");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -37,9 +37,9 @@
 <div class="padded">
     <label>Result</label>
 %{--    todo: 5 decorate result--}%
-%{--    <mvc:decorate grade="${calculatorInstance}">--}%
+    <mvc:decorate grade="${calculatorInstance}">
         <output>${calculatorInstance.result}</output>
-%{--    </mvc:decorate>--}%
+    </mvc:decorate>
 </div>
 
 
