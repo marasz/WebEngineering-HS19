@@ -36,7 +36,6 @@
 
 <div class="padded">
     <label>Result</label>
-%{--    todo: 5 decorate result--}%
     <mvc:decorate grade="${calculatorInstance}">
         <output>${calculatorInstance.result}</output>
     </mvc:decorate>
